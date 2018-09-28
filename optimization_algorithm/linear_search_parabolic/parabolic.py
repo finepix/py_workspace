@@ -110,5 +110,5 @@ if __name__ == '__main__':
     plt.plot(x, y)
     plt.show()
     result = parabolic_search(p_27_2_f, 0.0, 3.0, 0.01)
-    print(result)
+    print(result) 
 
