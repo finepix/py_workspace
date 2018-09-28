@@ -76,22 +76,39 @@ def parabolic_search(f, a, b, epsilon=1e-1):
     return s_mean, f_mean
 
 
-if __name__ == '__main__':
-    x = np.linspace(1, 3, 200)
-    y = []
-    index = 0
-    for i in x:
-        y.append(complicated_func(x[index]))
-        index += 1
-    plt.plot(x, y)
-    plt.show()
+# 课后习题
+def p_27_2_f(x):
+    return x * x * x - 2 * x + 1
 
-    result = parabolic_search(complicated_func, 1.0, 3.0)
-    print(result)
+
+if __name__ == '__main__':
+    # x = np.linspace(1, 3, 200)
+    # y = []
+    # index = 0
+    # for i in x:
+    #     y.append(complicated_func(x[index]))
+    #     index += 1
+    # plt.plot(x, y)
+    # plt.show()
+    #
+    # result = parabolic_search(complicated_func, 1.0, 3.0)
+    # print(result)
 
     # x = np.linspace(0, 2, 200)
     # plt.plot(x, phi(x))
     # plt.show()
     # result = parabolic_search(phi, 0, 2.0)
     # print(result)
+
+    # p27 习题解答
+    x = np.linspace(0, 3, 1000)
+    y = []
+    index = 0
+    for i in x:
+        y.append(p_27_2_f(x[index]))
+        index += 1
+    plt.plot(x, y)
+    plt.show()
+    result = parabolic_search(p_27_2_f, 0.0, 3.0, 0.01)
+    print(result)
 

@@ -70,19 +70,37 @@ def golds_search(phi, a, b, delta, epsilon):
     return min_point, min_value
 
 
+# 课后习题
+def p_27_2_f(x):
+    return x * x * x - 2 * x + 1
+
+
 if __name__ == '__main__':
     x = np.linspace(1, 3, 200)
-
     # plt.plot(x, phi(x))
     # plt.show()
     # result = golds_search(phi, float(-2), float(2), 0.001, 0.001)
 
+    # x = np.linspace(1, 3, 200)
+    # y = []
+    # index = 0
+    # for i in x:
+    #     y.append(complicated_func(x[index]))
+    #     index += 1
+    # plt.plot(x, y)
+    # plt.show()
+    # result = golds_search(complicated_func, float(1), float(3), 0.001, 0.001)
+    # print(result)
+
+    x = np.linspace(0, 3, 1000)
     y = []
     index = 0
     for i in x:
-        y.append(complicated_func(x[index]))
+        y.append(p_27_2_f(x[index]))
         index += 1
     plt.plot(x, y)
     plt.show()
-    result = golds_search(complicated_func, float(1), float(3), 0.001, 0.001)
+    result = golds_search(p_27_2_f, 0, 3, 0.15, 0.15)
     print(result)
+    # print(math.sqrt(2 / 3))
+
