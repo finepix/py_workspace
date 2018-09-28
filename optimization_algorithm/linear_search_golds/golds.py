@@ -4,10 +4,20 @@ import matplotlib.pyplot as plt
 
 
 def phi(x):
+    '''
+        测试函数1
+    :param x:
+    :return:
+    '''
     return x * x - 2 * x + 1
 
 
 def complicated_func(x):
+    '''
+        测试函数2
+    :param x:
+    :return:
+    '''
     return x * x * x + 5 * math.sin(2 * x)
 
 
