@@ -7,6 +7,10 @@ def phi(x):
     return x * x - 2 * x + 1
 
 
+def complicated_func(x):
+    return x * x * x + 5 * math.sin(2 * x)
+
+
 def golds_search(phi, a, b, delta, epsilon):
     '''
         黄金分割法，p15
@@ -57,8 +61,18 @@ def golds_search(phi, a, b, delta, epsilon):
 
 
 if __name__ == '__main__':
-    x = np.linspace(-2, 2, 100)
-    plt.plot(x, phi(x))
+    x = np.linspace(1, 3, 200)
+
+    # plt.plot(x, phi(x))
+    # plt.show()
+    # result = golds_search(phi, float(-2), float(2), 0.001, 0.001)
+
+    y = []
+    index = 0
+    for i in x:
+        y.append(complicated_func(x[index]))
+        index += 1
+    plt.plot(x, y)
     plt.show()
-    result = golds_search(phi, float(-2), float(2), 0.001, 0.001)
+    result = golds_search(complicated_func, float(1), float(3), 0.001, 0.001)
     print(result)
