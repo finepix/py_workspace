@@ -76,7 +76,7 @@ def p_27_2_f(x):
 
 
 if __name__ == '__main__':
-    x = np.linspace(1, 3, 200)
+    # x = np.linspace(1, 3, 200)
     # plt.plot(x, phi(x))
     # plt.show()
     # result = golds_search(phi, float(-2), float(2), 0.001, 0.001)

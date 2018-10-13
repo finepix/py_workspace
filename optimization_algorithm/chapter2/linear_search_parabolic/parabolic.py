@@ -70,8 +70,8 @@ def parabolic_search(f, a, b, epsilon=1e-1):
                 s1 = s_mean
                 f0 = f1
                 f1 = f_mean
-        # print([k, (s2 - s0), f_mean, s_mean])
-        print(k)
+        print([k, (s2 - s0), f_mean, s_mean])
+        # print(k)
         k += 1
     return s_mean, f_mean
 
@@ -110,5 +110,5 @@ if __name__ == '__main__':
     plt.plot(x, y)
     plt.show()
     result = parabolic_search(p_27_2_f, 0.0, 3.0, 0.01)
-    print(result) 
+    print(result)
 
