@@ -5,6 +5,16 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 def sdm(fun, gfun, x0, rho, sigma, epsilon):
+    '''
+        最速下降法
+    :param fun:             目标函数
+    :param gfun:            梯度函数
+    :param x0:              初始点
+    :param rho:             armijo搜索参数
+    :param sigma:           同上
+    :param epsilon:         终止调节参数
+    :return:
+    '''
     max_iter_k = 5000
     max_m = 20
     k = 0
@@ -32,6 +42,11 @@ def sdm(fun, gfun, x0, rho, sigma, epsilon):
 
 
 def obj(x):
+    '''
+        目标函数 课本p31
+    :param x:
+    :return:
+    '''
     y = x[1]
     x = x[0]
     return 100 * pow(x * x - y, 2) + pow(x - 1, 2)
@@ -45,6 +60,11 @@ def obj_g(x):
 
 
 def test_f(x):
+    '''
+            测试二元函数
+    :param x:
+    :return:
+    '''
     y = x[1]
     x = x[0]
     return (x - 1)**2 + (y - 2)**2
