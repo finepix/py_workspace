@@ -123,7 +123,7 @@ class GA:
             mother = mothers[i]
 
             pro = random.uniform(0, 1)
-            if pro < 0.7:
+            if pro < self.crossover_pro:
                 # todo 位置从一半开始，防止每一次变化过大（待优化，每一次迭代需要将最大的值保留下来，这样能保证种群不会退化）
                 index = random.randint(self.ga_length / 2, self.ga_length)
                 child_a = father[:index] + mother[index:]
