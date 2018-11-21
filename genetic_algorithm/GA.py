@@ -189,7 +189,7 @@ class GA:
             # 绘图
             # if i != 0 and i % 10 == 0:
             if i % 50 == 0:
-                self.plot_data(fitness_list)
+                self.plot_data(fitness_list, i)
 
             # stop condition
             flag = False
@@ -201,16 +201,20 @@ class GA:
                 break
         return max(gen)
 
-    def plot_data(self, fitness_list):
+    def plot_data(self, fitness_list, it):
         """
                     统计以及绘图
         :param fitness_list:
+        :param it:
         :return:
         """
         self.plt.figure(1)
         self.plt.clf()
+        self.plt.xlabel('Gray scale')
+        self.plt.ylabel('Fitness value')
+        self.plt.title('Generation at {}'.format(it))
 
-        self.plt.plot(self.x, self.y)
+        self.plt.plot(self.x, self.y, '-g')
 
         populations = [self.num_decode(pop) for pop in self.populations]
 
