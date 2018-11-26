@@ -173,23 +173,28 @@ class GA:
     def run(self):
         # todo 添加可视化图像
         for i in range(self.evolution_times):
-            self.selection()
-            self.crossover()
-            self.variation()
+
             # view data in plot
             fitness_list = self.calculate_fitness_list()
             max_val = max(fitness_list)
             min_val = min(fitness_list)
+
+            # 绘图
+            # if i != 0 and i % 10 == 0:
+            if i % 50 == 0:
+                self.plot_data(fitness_list, i)
+            # 保存绘图
+            self.plot_data(fitness_list, i, True)
 
             gen = self.statistics()
             print('iterations at {}, max is {}, min is {}'.format(i, max_val, min_val))
             # todo delete
             # print('result:', gen)
 
-            # 绘图
-            # if i != 0 and i % 10 == 0:
-            if i % 50 == 0:
-                self.plot_data(fitness_list, i)
+            # main step
+            self.selection()
+            self.crossover()
+            self.variation()
 
             # stop condition
             flag = False
@@ -201,11 +206,12 @@ class GA:
                 break
         return max(gen)
 
-    def plot_data(self, fitness_list, it):
+    def plot_data(self, fitness_list, it, save_fig=False):
         """
-                    统计以及绘图
+                绘图以及保存图像
         :param fitness_list:
         :param it:
+        :param save_fig:
         :return:
         """
         self.plt.figure(1)
@@ -220,6 +226,9 @@ class GA:
 
         self.plt.scatter(populations, fitness_list)
         self.plt.show()
+        if save_fig:
+            file_name = 'ga_process/' + 'iter_' + str(it) + '.jpg'
+            self.plt.savefig(file_name)
 
         time.sleep(0.2)
 
