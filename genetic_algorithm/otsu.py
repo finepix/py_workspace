@@ -56,22 +56,30 @@ def otsuth(img, threshold):
 
 
 if __name__ == '__main__':
-    file_path = 'images\ship_1.jpg'
+    file_path = 'images\ship.jpg'
     image = cv2.imread(file_path)
+    cv2.imshow('origin_img', image)
+    image_gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 
-    v = []
-    for i in range(GRAY_SCALE):
-        print(i)
-        v.append(otsuth(image, i))
+    image_gray[image_gray > 143] = 255
 
-    max_v = max(v)
-    ind = v.index(max_v)
+    cv2.imshow('IM_OTSU', image_gray)
+    cv2.waitKey(-1)
 
-    plt.plot(range(GRAY_SCALE), v)
-    y_lim = plt.ylim()
-    plt.plot([ind, ind], y_lim, 'm--')
-    plt.ylim(min(v), max(v) + 100)
-    plt.xlim(0, 255)
+    # v = []
+    # for i in range(GRAY_SCALE):
+    #     print(i)
+    #     v.append(otsuth(image, i))
+    #
+    # max_v = max(v)
+    # ind = v.index(max_v)
+    #
+    # plt.plot(range(GRAY_SCALE), v)
+    # y_lim = plt.ylim()
+    # plt.plot([ind, ind], y_lim, 'm--')
+    # plt.ylim(min(v), max(v) + 100)
+    # plt.xlim(0, 255)
 
-    plt.show()
+    # plt.show()
+
 
