@@ -37,8 +37,13 @@ class GA:
         self.plt = plt
         x = range(pow(2, self.ga_length))
         y = [self.fitness(self.data, i) for i in x]
+        max_y = max(y)
+        index_max = y.index(max_y)
         self.x = x
         self.y = y
+        self.max_y = max_y
+        self.index_max = index_max
+        self.min_y = min(y)
 
         # 随机产生种群，并且编码
         self.populations = []
@@ -99,6 +104,60 @@ class GA:
         # # todo delete
         # gen = self.statistics()
         # print('after selection:', gen)
+
+    def selection_v2(self):
+        """
+                通过轮盘法选择(改进算法)，保留最大值对应的个体，防止种群退化
+        :return:
+        """
+        # 计算每一个个体的适应度值
+        fitness_list = self.calculate_fitness_list()
+        max_fitness = max(fitness_list)
+
+        # step1:将最大值和其余的值分离，并且将populations重新赋值
+        next_generations = []
+        remain_populations = []
+        for i in range(len(fitness_list)):
+            if fitness_list[i] == max_fitness:
+                next_generations.append(self.populations[i])
+            else:
+                remain_populations.append(self.populations[i])
+
+        # 将剩下的populations赋值给model
+        self.populations = remain_populations
+        fitness_list = self.calculate_fitness_list()
+
+        # step2:计算概率
+        fitness_sum = 0.0
+        for fit in fitness_list:
+            fitness_sum += fit
+        fitness_pro = []
+        for i in range(len(fitness_list)):
+            fitness_pro.append(fitness_list[i] / fitness_sum)
+
+        # step3:计算剩余人口的轮盘选择概率
+        pro_sum = 0.0
+        for i in range(1, len(fitness_pro)):
+            pro_sum += fitness_pro[i]
+            fitness_pro[i] = pro_sum
+        # 在计算中由于浮点数计算会存在误差导致最后的概率之和不为1，这里纠正
+        fitness_pro[-1] = 1
+
+        # next_generations = []
+        # step4:轮盘选择出与剩下的人数相等的population
+        for i in range(len(remain_populations)):
+            # 产生一个0 - 1的概率
+            pro = random.uniform(0, 1)
+
+            # 可优化（先计算完轮盘选择的全部概率分布，归结子问题），见上
+            if pro <= fitness_pro[0]:
+                next_generations.append(self.populations[0])
+                continue
+            for j in range(self.population_num - 1):
+                if fitness_pro[j] < pro < fitness_pro[j + 1]:
+                    next_generations.append(self.populations[j + 1])
+                    break
+        self.populations = next_generations
 
     def crossover(self):
         """
@@ -192,14 +251,15 @@ class GA:
             # print('result:', gen)
 
             # main step
-            self.selection()
+            # self.selection()
+            self.selection_v2()
             self.crossover()
             self.variation()
 
             # stop condition
             flag = False
             for g in gen:
-                if g > self.population_num * 0.95:
+                if g > self.population_num * 0.98:
                     flag = True
                     break
             if flag:
@@ -221,6 +281,12 @@ class GA:
         self.plt.title('Generation at {}'.format(it))
 
         self.plt.plot(self.x, self.y, '-g')
+        y_lim = self.plt.ylim()
+        plt.plot([self.index_max, self.index_max], y_lim, 'm--')
+        y_min = self.min_y
+        y_max = self.max_y + 100
+        plt.ylim(y_min, y_max)
+        plt.xlim(0, 255)
 
         populations = [self.num_decode(pop) for pop in self.populations]
 
@@ -230,7 +296,7 @@ class GA:
             file_name = 'ga_process/' + 'iter_' + str(it) + '.jpg'
             self.plt.savefig(file_name)
 
-        time.sleep(0.2)
+        # time.sleep(0.2)
 
     def statistics(self):
         """

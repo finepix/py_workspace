@@ -64,6 +64,14 @@ if __name__ == '__main__':
         print(i)
         v.append(otsuth(image, i))
 
+    max_v = max(v)
+    ind = v.index(max_v)
+
     plt.plot(range(GRAY_SCALE), v)
+    y_lim = plt.ylim()
+    plt.plot([ind, ind], y_lim, 'm--')
+    plt.ylim(min(v), max(v) + 100)
+    plt.xlim(0, 255)
+
     plt.show()
 
