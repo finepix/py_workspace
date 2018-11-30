@@ -25,4 +25,4 @@ if __name__ == '__main__':
     cro_pro = 0.5
     mut_pro = 0.001
 
-    make_video(cro_pro, mut_pro, 500, fps=60)
+    make_video(cro_pro, mut_pro, 11, fps=4)
