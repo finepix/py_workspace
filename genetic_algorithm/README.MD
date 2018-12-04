@@ -227,5 +227,5 @@ def variation(self):
 ```
 > 以上实现为：选择、交叉、变异 各步骤。
 
-## 代码下载
-https://download.csdn.net/download/qq_26479655/10811021
+## 博客地址
+https://blog.csdn.net/qq_26479655/article/details/84568462
