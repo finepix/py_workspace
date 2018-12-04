@@ -3,8 +3,6 @@
 """
 import random
 import matplotlib.pyplot as plt
-import time
-import cv2
 
 
 class GA:
@@ -215,7 +213,7 @@ class GA:
             # stop condition
             flag = False
             for g in gen:
-                if g > self.population_num * 0.98:
+                if g > self.population_num * 0.95:
                     flag = True
                     break
             if flag:
