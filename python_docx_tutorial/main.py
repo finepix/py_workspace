@@ -24,11 +24,22 @@ if __name__ == '__main__':
     # base_dir = 'G:\\test\\课堂测试\\第四章\\课堂测试-学生提交'
     # sub_num = 30
 
-    # 第三章
-    true_answers = []
-    base_dir = 'G:\\test\\课堂测试'
-    sub_num = 45
+    # 第三章 （多选题和填空题直接给分，不然要加太多的事物逻辑）
+    # true_answers = [-1, 2, -1, 2, -1, -1, 2, 1, 1, 1,
+    #                 -1, 1, 2, 3, 1, 2, -1, 1, -1, -1,
+    #                 1, 2, 2, -1, 1, 1, 1, 1, -1, 1,
+    #                 2, 1, 1, 2, 2, 2, 1, 1, 1, 1,
+    #                 2, 2, 3, -1, 4]
+    # base_dir = 'G:\\test\\课堂测试\\第三章\\学生提交-课堂测试'
+    # sub_num = 45
 
+    # 第二章 （和第三章一样，多选填空直接给分,由于选项太多所以最后的几道题全不给分）
+    true_answers = [1, 1, 1, 2, 2, 1, 1, 2, 1, 1,
+                    1, 1, 2, 2, 2, 2, 3, 1, 4, 4,
+                    -1, -1, -1, -1, -1, -2, -2, -2, -2, -2,
+                    -2, -2]
+    base_dir = 'G:\\test\\课堂测试\\第二章\\提交'
+    sub_num = 32
 
     # 正则表达式初始化
     regu_stu_id = r"[0-9]"
@@ -46,7 +57,13 @@ if __name__ == '__main__':
             stu_id = pt_stu_id.findall(file_name)
             stu_id = ''.join(stu_id)
             with open(file_path, 'rb') as f:
-                [answers, marked] = extract(f, sub_num)
+                try:
+
+                    [answers, marked] = extract(f, sub_num)
+                except Exception as e:
+                    marked_file.append(file_path)
+                    continue
+
                 # assert for the num
                 # if len(answers) != sub_num:
                 #     print('not correctly detect the subject num! answers number {}'.format(len(answers)))
