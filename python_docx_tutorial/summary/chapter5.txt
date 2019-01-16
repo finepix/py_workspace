@@ -1,0 +1,287 @@
+D:\program\Python_3.7\python.exe "D:\program\PyCharm 2018.1.4\helpers\pydev\pydevd.py" --cmd-line --multiproc --qt-support=auto --client 127.0.0.1 --port 6007 --file D:/Workspace/py_workspace/python_docx_tutorial/main.py
+pydev debugger: process 7160 is connecting
+Connected to pydev debugger (build 181.5087.37)
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F100_192.168.117.100\第五章数据管理与分析-16031225-卢嘉宁.docx
+抽取完毕，个数为：30
+学号：16031225，成绩：25
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F106_192.168.117.106\孙易辰  18120369.docx
+抽取完毕，个数为：30
+学号：18120369，成绩：14
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F107_192.168.117.107\18120362方龙喜.docx
+抽取完毕，个数为：30
+学号：18120362，成绩：9
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F10_192.168.117.10\第五章数据管理与分析-18120373-周宇恒.docx
+抽取完毕，个数为：30
+学号：18120373，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F110_192.168.117.110\18120318叶宜宁.docx
+抽取完毕，个数为：30
+学号：18120318，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F111_192.168.117.111\其米朗珠18120367.docx
+抽取完毕，个数为：30
+学号：18120367，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F112_192.168.117.112\久美多杰18120326.docx
+抽取完毕，个数为：30
+学号：18120326，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F115_192.168.117.115\第五章数据管理与分析-18120334-徐放鹤.docx
+抽取完毕，个数为：30
+学号：18120334，成绩：22
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F116_192.168.117.116\第五章数据管理与分析-18120330-麦吾兰江.docx
+抽取完毕，个数为：30
+学号：18120330，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F118_192.168.117.118\第五章数据管理与分析-学号18120332-姓名聂文博.docx
+抽取完毕，个数为：30
+学号：18120332，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F11_192.168.117.11\第五章数据管理与分析-18120311-刘璨.docx
+抽取完毕，个数为：29
+学号：18120311，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F122_192.168.117.122\第五章数据管理与分析-18120364-贾志鹏.docx
+抽取完毕，个数为：30
+学号：18120364，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F123_192.168.117.123\孔奇18120366.docx
+抽取完毕，个数为：30
+学号：18120366，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F124_192.168.117.124\姜新尧18120365.docx
+抽取完毕，个数为：30
+学号：18120365，成绩：14
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F12_192.168.117.12\骆弟湘18120348.docx
+抽取完毕，个数为：30
+学号：18120348，成绩：17
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F132_192.168.117.132\第五章数据管理与分析-18120325-郝世超.docx
+抽取完毕，个数为：30
+学号：18120325，成绩：24
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F138_192.168.117.138\18120372伊尔潘江·艾麦尔.docx
+抽取完毕，个数为：30
+学号：18120372，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F139_192.168.117.139\第五章数据管理与分析-18120370-王圣元.docx
+抽取完毕，个数为：30
+学号：18120370，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F13_192.168.117.13\第五章数据管理与分析-18120303-边央.docx
+抽取完毕，个数为：30
+学号：18120303，成绩：17
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F140_192.168.117.140\第五章数据管理与分析-18120371-王志恒.docx
+抽取完毕，个数为：30
+学号：18120371，成绩：15
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F14_192.168.117.14\第五章数据管理与分析-18120312-陆嘉镔.docx
+抽取完毕，个数为：30
+学号：18120312，成绩：19
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F16_192.168.117.16\第五章数据管理与分析-18120340-陈曦然.docx
+抽取完毕，个数为：30
+学号：18120340，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F17_192.168.117.17\18120343黄文堃.docx
+抽取完毕，个数为：30
+学号：18120343，成绩：15
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F18_192.168.117.18\18120344朗嘎德珍.docx
+抽取完毕，个数为：30
+学号：18120344，成绩：18
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F19_192.168.117.19\胡洁慈18120342.docx
+抽取完毕，个数为：29
+学号：18120342，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F1_192.168.117.1\第五章数据管理与分析-17113123-肖政恺.docx
+抽取完毕，个数为：30
+学号：17113123，成绩：22
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F22_192.168.117.22\第五章数据管理与分析-18120313-孟天娇.docx
+抽取完毕，个数为：30
+学号：18120313，成绩：17
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F24_192.168.117.24\第五章数据管理与分析-18120301艾克达.docx
+抽取完毕，个数为：30
+学号：18120301，成绩：13
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F25_192.168.117.25\王清濯18120352.docx
+抽取完毕，个数为：29
+学号：18120352，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F26_192.168.117.26\18120351王美玉.docx
+抽取完毕，个数为：30
+学号：18120351，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F28_192.168.117.28\18120345-李奕欣.docx
+抽取完毕，个数为：30
+学号：18120345，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F29_192.168.117.29\第五章数据管理与分析-18120350-王静瑜.docx
+抽取完毕，个数为：30
+学号：18120350，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F2_192.168.117.2\第五章数据管理与分析-18120331聂港澳.docx
+抽取完毕，个数为：29
+学号：18120331，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F30_192.168.117.30\第五章数据管理与分析-迪丽努尔18120341.docx
+抽取完毕，个数为：29
+学号：18120341，成绩：5
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F31_192.168.117.31\18120305杜宇晨.docx
+题目数量差太多，检查文档！
+检测到的题目个数为：1
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F32_192.168.117.32\柏汶妤18120302.docx
+题目数量差太多，检查文档！
+检测到的题目个数为：1
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F33_192.168.117.33\-曹雅欣18120304.docx
+抽取完毕，个数为：30
+学号：18120304，成绩：17
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F35_192.168.117.35\18120314聂扬.docx
+抽取完毕，个数为：30
+学号：18120314，成绩：13
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F36_192.168.117.36\18120322-周瑨喆.docx
+抽取完毕，个数为：30
+学号：18120322，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F37_192.168.117.37\第五章数据管理与分析-18120338蔡方园.docx
+抽取完毕，个数为：30
+学号：18120338，成绩：24
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F39_192.168.117.39\陈静知 18120339.docx
+抽取完毕，个数为：30
+学号：18120339，成绩：18
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F3_192.168.117.3\陈昱翔18120324.docx
+抽取完毕，个数为：30
+学号：18120324，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F40_192.168.117.40\第五章数据管理与分析-18120321-张天晓.docx
+抽取完毕，个数为：30
+学号：18120321，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F45_192.168.117.45\第五章数据管理与分析-18120354-徐嘉琦.docx
+抽取完毕，个数为：30
+学号：18120354，成绩：24
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F46_192.168.117.46\18120959-赵一诺.docx
+抽取完毕，个数为：24
+学号：18120959，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F48_192.168.117.48\第五章数据管理与分析-18120347-罗莹.docx
+题目数量差太多，检查文档！
+检测到的题目个数为：1
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F49_192.168.117.49\第五章数据管理与分析-18120346-李月.docx
+抽取完毕，个数为：30
+学号：18120346，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F4_192.168.117.4\第五章数据管理与分析-18120329刘政霖.docx
+抽取完毕，个数为：30
+学号：18120329，成绩：15
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F50_192.168.117.50\第五章数据管理与分析-18120349-王嘉晗.docx
+抽取完毕，个数为：30
+学号：18120349，成绩：22
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F54_192.168.117.54\第五章数据管理与分析-吴宛玲-18120353.docx
+抽取完毕，个数为：30
+学号：18120353，成绩：17
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F56_192.168.117.56\第五章数据管理与分析-18120328-刘泓宇.docx
+抽取完毕，个数为：30
+学号：18120328，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F57_192.168.117.57\第五章数据管理与分析-18120327-李佳源.docx
+抽取完毕，个数为：30
+学号：18120327，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F5_192.168.117.5\第五章数据管理与分析-18120360-周燕妮.docx
+抽取完毕，个数为：30
+学号：18120360，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F67_192.168.117.67\18120317吴连香.docx
+抽取完毕，个数为：30
+学号：18120317，成绩：12
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F71_192.168.117.71\第五章数据管理与分析-18120310 林欣怡.docx
+抽取完毕，个数为：30
+学号：18120310，成绩：18
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F72_192.168.117.72\黄钱美18120308.docx
+抽取完毕，个数为：30
+学号：18120308，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F73_192.168.117.73\梁晋慧18120309.docx
+抽取完毕，个数为：30
+学号：18120309，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F77_192.168.117.77\应汝佳 18120356.docx
+题目数量差太多，检查文档！
+检测到的题目个数为：1
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F78_192.168.117.78\第五章-18120355-徐文豪.docx
+题目数量差太多，检查文档！
+检测到的题目个数为：1
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F79_192.168.117.79\张安妮18120358.docx
+抽取完毕，个数为：30
+学号：18120358，成绩：26
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F7_192.168.117.7\18120306 方凌子.docx
+抽取完毕，个数为：30
+学号：18120306，成绩：11
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F80_192.168.117.80\第五章数据管理与分析-18120357于诗凡.docx
+抽取完毕，个数为：30
+学号：18120357，成绩：20
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F8_192.168.117.8\18120307韩睿宇.docx
+抽取完毕，个数为：30
+学号：18120307，成绩：21
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F92_192.168.117.92\第五章数据管理与分析-18120336-赵赓浩.docx
+抽取完毕，个数为：30
+学号：18120336，成绩：23
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F93_192.168.117.93\第五章数据管理与分析-18120337-郑展鹏.docx
+抽取完毕，个数为：30
+学号：18120337，成绩：22
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F94_192.168.117.94\第五章数据管理与分析-18120335--薛堃良.docx
+抽取完毕，个数为：29
+学号：18120335，成绩：16
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F96_192.168.117.96\第五章数据管理与分析-18120368-任然.docx
+抽取完毕，个数为：30
+学号：18120368，成绩：15
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F97_192.168.117.97\第五章数据管理与分析-18120374-朱孔涛.docx
+抽取完毕，个数为：30
+学号：18120374，成绩：15
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F98_192.168.117.98\第五章数据管理与分析-18120361 陈文麒.docx
+抽取完毕，个数为：30
+学号：18120361，成绩：22
+开始读取文档：C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\第五章数据管理与分析-18120323-朱彦熹.docx
+抽取完毕，个数为：30
+学号：18120361，成绩：21
+有成绩的人数：64
+{'16031225': 25, '18120369': 14, '18120362': 9, '18120373': 21, '18120318': 23, '18120367': 11, '18120326': 11, '18120334': 22, '18120330': 23, '18120332': 20, '18120311': 16, '18120364': 20, '18120366': 20, '18120365': 14, '18120348': 17, '18120325': 24, '18120372': 11, '18120370': 16, '18120303': 17, '18120371': 15, '18120312': 19, '18120340': 23, '18120343': 15, '18120344': 18, '18120342': 16, '17113123': 22, '18120313': 17, '18120301': 13, '18120352': 11, '18120351': 20, '18120345': 16, '18120350': 23, '18120331': 16, '18120341': 5, '18120304': 17, '18120314': 13, '18120322': 23, '18120338': 24, '18120339': 18, '18120324': 16, '18120321': 20, '18120354': 24, '18120959': 11, '18120346': 21, '18120329': 15, '18120349': 22, '18120353': 17, '18120328': 20, '18120327': 21, '18120360': 21, '18120317': 12, '18120310': 18, '18120308': 21, '18120309': 21, '18120358': 26, '18120306': 11, '18120357': 20, '18120307': 21, '18120336': 23, '18120337': 22, '18120335': 16, '18120368': 15, '18120374': 15, '18120361': 21}
+学号：16031225， 成绩：25
+学号：17113123， 成绩：22
+学号：18120301， 成绩：13
+学号：18120303， 成绩：17
+学号：18120304， 成绩：17
+学号：18120306， 成绩：11
+学号：18120307， 成绩：21
+学号：18120308， 成绩：21
+学号：18120309， 成绩：21
+学号：18120310， 成绩：18
+学号：18120311， 成绩：16
+学号：18120312， 成绩：19
+学号：18120313， 成绩：17
+学号：18120314， 成绩：13
+学号：18120317， 成绩：12
+学号：18120318， 成绩：23
+学号：18120321， 成绩：20
+学号：18120322， 成绩：23
+学号：18120324， 成绩：16
+学号：18120325， 成绩：24
+学号：18120326， 成绩：11
+学号：18120327， 成绩：21
+学号：18120328， 成绩：20
+学号：18120329， 成绩：15
+学号：18120330， 成绩：23
+学号：18120331， 成绩：16
+学号：18120332， 成绩：20
+学号：18120334， 成绩：22
+学号：18120335， 成绩：16
+学号：18120336， 成绩：23
+学号：18120337， 成绩：22
+学号：18120338， 成绩：24
+学号：18120339， 成绩：18
+学号：18120340， 成绩：23
+学号：18120341， 成绩：5
+学号：18120342， 成绩：16
+学号：18120343， 成绩：15
+学号：18120344， 成绩：18
+学号：18120345， 成绩：16
+学号：18120346， 成绩：21
+学号：18120348， 成绩：17
+学号：18120349， 成绩：22
+学号：18120350， 成绩：23
+学号：18120351， 成绩：20
+学号：18120352， 成绩：11
+学号：18120353， 成绩：17
+学号：18120354， 成绩：24
+学号：18120357， 成绩：20
+学号：18120358， 成绩：26
+学号：18120360， 成绩：21
+学号：18120361， 成绩：21
+学号：18120362， 成绩：9
+学号：18120364， 成绩：20
+学号：18120365， 成绩：14
+学号：18120366， 成绩：20
+学号：18120367， 成绩：11
+学号：18120368， 成绩：15
+学号：18120369， 成绩：14
+学号：18120370， 成绩：16
+学号：18120371， 成绩：15
+学号：18120372， 成绩：11
+学号：18120373， 成绩：21
+学号：18120374， 成绩：15
+学号：18120959， 成绩：11
+标注文档数目：5
+C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F31_192.168.117.31\18120305杜宇晨.docx
+C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F32_192.168.117.32\柏汶妤18120302.docx
+C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F48_192.168.117.48\第五章数据管理与分析-18120347-罗莹.docx
+C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F77_192.168.117.77\应汝佳 18120356.docx
+C:\Users\lenovo02\Documents\WeChat Files\Zipcoder\Files\第五章\学生提交\F78_192.168.117.78\第五章-18120355-徐文豪.docx
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
