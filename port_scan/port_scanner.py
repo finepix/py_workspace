@@ -59,10 +59,16 @@ def telnet(ip, port=22):
 
 if __name__ == '__main__':
 
-    [ip_address, net_mask, net_segment] = get_localhost_info()
+    [_, net_mask, net_segment] = get_localhost_info()
 
-    # 遍历整个网段
+    result = []
 
-    # ping(ip_address)
-    # telnet(ip_address)
+    # 遍历整个网段，并将结果保存至result
+    IPs = IP(net_segment).make_net(net_mask)
+    for ip_address in IPs:
+        ping(ip_address)
+        telnet(ip_address)
+
+
+
 
