@@ -6,3 +6,4 @@ step 4：汇总，得到需要的地址。
 # 需要安装的包
  - IPy（用于处理IP地址的模块）
  - netifaces（用于获取子网掩码以及IP地址，具体详情移步：https://pypi.org/project/netifaces/）
+ - 需要用到subprocess
