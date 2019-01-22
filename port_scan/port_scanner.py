@@ -66,8 +66,13 @@ if __name__ == '__main__':
     # 遍历整个网段，并将结果保存至result
     IPs = IP(net_segment).make_net(net_mask)
     for ip_address in IPs:
-        ping(ip_address)
-        telnet(ip_address)
+        ping_status = ping(ip_address)
+        if ping_status:                             # 能ping通的ip
+            telnet_status = telnet(ip_address)
+            if telnet_status:                       # 端口测试通过
+                result.append(ip_address)
+
+    print(result)
 
 
 
