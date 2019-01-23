@@ -2,8 +2,7 @@ from selenium import webdriver
 import time
 import os
 
-# initialization
-browser = webdriver.Chrome('chrome_driver/chromedriver.exe')
+
 url = 'http://2.2.2.2'
 user_name = '181050016'
 pwd = '0016247430'
@@ -14,6 +13,9 @@ def login():
             校园上网验证
     :return:
     """
+    # initialization
+    browser = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+    # chrome_driver/chromedriver.exe
     browser.get(url)
     login_btns = browser.find_element_by_id('mode_password')\
         .find_element_by_css_selector('.login_body > .btn_ok')\
