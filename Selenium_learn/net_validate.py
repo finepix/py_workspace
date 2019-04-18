@@ -63,6 +63,8 @@ def is_online():
 
 if __name__ == '__main__':
 
+    # 服务未开启
+    login()
     while True:
         if is_online():
             print('设备已联网，等待20分钟重新检测')

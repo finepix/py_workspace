@@ -4,6 +4,8 @@ from IPy import IP
 import netifaces as ntf
 import subprocess
 import logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def get_localhost_info():
@@ -15,15 +17,15 @@ def get_localhost_info():
     eth0_interface = interfaces[0]
     eth0_info = ntf.ifaddresses(eth0_interface)
     # 这里的info为一个字典，-1000为mac地址，23为ipv6信息，2为ipv4信息
-    # logging.info(eth0_info)
+    # logger.info(eth0_info)
     ipv4_info = eth0_info[2][0]
-    # logging.info(ipv4_info)
+    # logger.info(ipv4_info)
 
     # 获取IP地址以及子网掩码，并得到局域网的网段
     ipv4_address = ipv4_info['addr']
     ipv4_net_mask = ipv4_info['netmask']
     network_segment = IP(ipv4_address).make_net(ipv4_net_mask).strNormal(0)
-    # logging.info(network_segment)
+    # logger.info(network_segment)
 
     return [ipv4_address, ipv4_net_mask, network_segment]
 
@@ -38,7 +40,7 @@ def ping(ip, achieve_type=3):
     if achieve_type == 1:
         cmd = 'ping -w 2 -n 1 {}'.format(ip)
         ping_result_code = os.system(cmd)
-        logging.info(ping_result_code)
+        logger.info(ping_result_code)
         if ping_result_code:
             return False
         else:
@@ -47,13 +49,13 @@ def ping(ip, achieve_type=3):
         p = subprocess.Popen(['ping.exe', ip], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                              shell=True)
         output = p.stdout.read()
-        logging.info(output)
+        logger.info(output)
     else:
         cmd = 'ping -w 2 -n 1 {}'.format(ip)
         status_code, output = subprocess.getstatusoutput(cmd)
 
-        logging.info('ping返回状态代码：{}'.format(not status_code))
-        # logging.debug(output)
+        logger.info('ping返回状态代码：{}'.format(not status_code))
+        # logger.debug(output)
 
         if status_code == 0:                    # 正确执行
             return True
@@ -71,10 +73,10 @@ def telnet(ip, port=22, achieve_type=1):
     """
     if achieve_type == 1:
         try:
-            telnetlib.Telnet(ip, port, timeout=1)
-            logging.info('测试通过')
+            telnetlib.Telnet(ip, port, timeout=100)
+            logger.info('测试通过')
         except Exception as _:
-            logging.error(_)
+            logger.error(_)
 
             return False
         return True
@@ -95,7 +97,7 @@ if __name__ == '__main__':
     IPs = IP(net_segment).make_net(net_mask)
     for IP_obj in IPs:
         ip_address = IP_obj.strNormal(0)
-        logging.info('开始测试IP地址：{}'.format(ip_address))
+        logger.info('开始测试IP地址：{}'.format(ip_address))
         ping_status = ping(ip_address)
         if ping_status:                             # 能ping通的ip
             result_ping.append(ip_address)
@@ -103,8 +105,12 @@ if __name__ == '__main__':
             if telnet_status:                       # 端口测试通过
                 result.append(ip_address)
 
-    logging.info(result_ping)
-    logging.info(result)
+    # 遍历可以ping的IP地址
+    for i in result_ping:
+        print(i)
+
+    # logger.info(result_ping)
+    logger.info(result)
 
     # 通过筛选，得到合适的IP地址
 

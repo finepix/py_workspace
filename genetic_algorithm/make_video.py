@@ -9,7 +9,7 @@ def make_video(cross_pro, mutation_pro, its, fps=8, size=(640, 480)):
     # mutation_pro = 0.01
 
     # video_file_name = 'video/improve_cross_' + str(cross_pro) + '_mutation_' + str(mutation_pro) + '.avi'
-    video_file_name = 'video/GA_v2_cross_' + str(cross_pro) + '_mutation_' + str(mutation_pro) + '.avi'
+    video_file_name = 'video/IGA_v3_cross_' + str(cross_pro) + '_mutation_' + str(mutation_pro) + '_3.avi'
     video_writer = cv2.VideoWriter(video_file_name, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
 
     print('start to write video:')
@@ -25,4 +25,4 @@ if __name__ == '__main__':
     cro_pro = 0.5
     mut_pro = 0.001
 
-    make_video(cro_pro, mut_pro, 500, fps=30)
+    make_video(cro_pro, mut_pro, 14, fps=4)
