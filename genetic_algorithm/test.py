@@ -1,7 +1,7 @@
 import cv2
 # from genetic_algorithm.GA import GA
-from genetic_algorithm.IGA import GA
-# from genetic_algorithm.IGA_v3 import GA
+# from genetic_algorithm.IGA import GA
+from genetic_algorithm.IGA_v3 import GA
 # from genetic_algorithm.OGA import GA
 from genetic_algorithm.otsu import otsuth
 
